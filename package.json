@@ -1,0 +1,38 @@
+{
+  "name": "hiruko",
+  "version": "1.0.0",
+  "description": "Development server for single-page apps",
+  "license": "MIT",
+  "repository": "vdemedes/hiruko",
+  "author": {
+    "name": "Vadim Demedes",
+    "email": "vdemedes@gmail.com",
+    "url": "https://github.com/vdemedes"
+  },
+	"scripts": {
+		"test": "xo"
+	},
+  "engines": {
+    "node": ">=4"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "bin": {
+    "hiruko": "cli.js"
+  },
+  "xo": {
+    "extends": "vdemedes",
+    "env": "node"
+  },
+  "devDependencies": {
+    "eslint-config-vdemedes": "^1.0.1",
+    "xo": "^0.12.1"
+  },
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "koa": "^1.1.2",
+    "koa-static": "^2.0.0",
+    "meow": "^3.7.0"
+  }
+}
