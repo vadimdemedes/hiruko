@@ -1,6 +1,6 @@
 {
 	"name": "hiruko",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Development server for single-page apps",
 	"license": "MIT",
 	"repository": "vdemedes/hiruko",
