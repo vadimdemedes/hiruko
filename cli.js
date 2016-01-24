@@ -5,9 +5,9 @@
  * Dependencies
  */
 
+const resolve = require('path').resolve;
 const serve = require('koa-static');
 const chalk = require('chalk');
-const join = require('path').join;
 const meow = require('meow');
 const koa = require('koa');
 
@@ -27,7 +27,7 @@ const cli = meow(`
  */
 
 const app = koa();
-const path = join(process.cwd(), cli.input[0] || '');
+const path = resolve(cli.input[0] || '');
 const port = process.env.PORT || 3000;
 const staticServer = serve(path);
 
